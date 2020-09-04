@@ -79,7 +79,19 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'xht_app.wsgi.application'
+
+# Channels
 ASGI_APPLICATION = 'xht_app.routing.application'
+
+# Config Channels layer to allow redis to handle it
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('127.0.0.1', 6379)],
+        },
+    },
+}
 
 
 # Database
