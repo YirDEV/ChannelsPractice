@@ -1,0 +1,21 @@
+.cache/
+.coverage
+.tox/
+htmlcov/
+staticfiles/
+venv/
+.ignoredfolder/*
+
+__pycache__/*
+*.pyc
+.venv/bin .
+venv/include 
+.venv/lib 
+.venv/lib64 
+.venv/pyvenv.cfg 
+.venv/share
+.venv/*
+.vscode/*
+.virtualenv/*
+notes/*
+db.sqlite3
